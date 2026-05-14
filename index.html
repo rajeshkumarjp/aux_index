@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a0a0b" />
+<meta name="description" content="AuX — Smart business automation. Seamlessly integrate full-stack dashboards, IoT hardware, and self-service portals to eliminate operational bottlenecks." />
+<meta name="keywords" content="AuX, business automation, self-service portals, full-stack dashboards, IoT integration, automated operations, SaaS, embedded systems" />
+<meta property="og:title" content="AuX — Lets Automate." />
+<meta property="og:description" content="End-to-end automation for modern businesses. Centralized dashboards, smart portals, and zero human dependency." />
+<meta property="og:type" content="website" />
+<title>AuX | Lets Automate</title>
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h3v3h-3zM18 18h3v3h-3zM14 20h2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-flow" viewBox="0 0 24 24"><path d="M4 7h12a4 4 0 0 1 0 8H8a4 4 0 0 0 0 8h12M16 3l4 4-4 4M8 27l-4-4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1.5-9.8A6 6 0 0 1 20 11a4 4 0 0 1 0 8H7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 5-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14 9.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-2.5 1-2.5 2s1 1.7 2.5 2 2.5 1 2.5 2-1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6v2M12 16v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cmd" viewBox="0 0 24 24"><path d="M9 9V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 10v7M8 7v.01M12 17v-4a2 2 0 1 1 4 0v4M12 13v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x-social" viewBox="0 0 24 24"><path d="M4 4l7.5 9L4 20h2l6.5-7.5L18 20h2l-7.8-9.4L19.5 4H17l-5.5 6.5L7 4H4Z" fill="currentColor"/></symbol>
+    <symbol id="i-gh" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.7-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" fill="currentColor"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<canvas id="bg-particles" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="AuX home">
+      <img src="logo.png" alt="AuX" class="logo-img" />
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#solution">Solutions</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#how">Approach</a>
+      <a href="#about">Company</a>
+    </nav>
+    <div class="nav-cta">
+      <!-- <a href="#cta" class="btn btn-ghost">Client Login</a> -->
+      <a href="#cta" class="btn btn-primary">Book Demo <svg class="ico-12"><use href="#i-arrow"/></svg></a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <!-- <span class="eyebrow"><span class="pulse"></span> v3.0 · Powering modern operations</span> -->
+      <h1>AuX<br/><span class="grad">Lets Automate!!</span></h1>
+      <p class="lead">AuX provides the operating layer for your business. We unite smart customer portals, full-stack central dashboards, and seamless physical-to-digital integrations so you can scale without the chaos.</p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn btn-primary btn-lg">Transform Your Business <svg class="ico-14"><use href="#i-arrow"/></svg></a>
+        <!-- <a href="#cta" class="btn btn-outline btn-lg">Explore Solutions</a> -->
+      </div>
+      <!-- <div class="hero-meta">
+        <div><strong data-count="120">0</strong><span>Active Nodes</span></div>
+        <div><strong data-count="48000">0</strong><span>Tasks Automated</span></div>
+        <div><strong data-count="99">0</strong><span>% Uptime</span></div>
+      </div> -->
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="grid-bg"></div>
+      <div class="glow"></div>
+      <div class="device">
+        <div class="device-top">
+          <div class="device-id">
+            <span class="led"></span>
+            <span>AuX Edge Terminal</span>
+            <span class="dim">· Syncing</span>
+          </div>
+          <div class="signal"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="device-screen">
+          <div class="screen-head">
+            <span class="kicker">PROCESS LOG</span>
+            <span class="job-id">#A-48291</span>
+          </div>
+          <div class="screen-row"><span>Task</span><b>Autonomous Vending</b></div>
+          <div class="screen-row"><span>Status</span><b>Verified · Active</b></div>
+          <div class="screen-row"><span>Value</span><b>₹ 24.00</b></div>
+          <div class="screen-qr">
+            <div class="qr"><div class="qr-grid"></div><div class="qr-center"></div></div>
+            <div class="qr-info">
+              <p class="qr-label">Seamless Gateway</p>
+              <p class="qr-sub">Processing data & payments</p>
+              <button class="btn btn-primary btn-sm">Execute <svg class="ico-12"><use href="#i-arrow"/></svg></button>
+            </div>
+          </div>
+          <div class="screen-progress"><i></i></div>
+          <div class="screen-foot">
+            <span>Encrypted</span><span>·</span><span>Real-time Telemetry</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-card card-a">
+        <span class="dot-g"></span>
+        <div><p>Node #A12 · Active</p><small>Self-Service Portal Live</small></div>
+      </div>
+      <div class="float-card card-b">
+        <p class="kicker">DAILY METRICS</p>
+        <h4>₹ 4,820</h4>
+        <span class="trend up"><svg class="ico-10"><use href="#i-arrow"/></svg> 12.4% Efficiency</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="strip">
+  <div class="container strip-inner">
+    <span>Trusted by ambitious operators scaling their infrastructure</span>
+    <div class="strip-logos">
+      <span>NORTHWIND</span><span>HELIOS</span><span>QUANTA</span><span>OBSIDIAN</span><span>VECTOR/LAB</span><span>NIMBUS</span>
+    </div>
+  </div>
+</section> -->
+
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">01 · The problem</span>
+      <h2>Operations are stuck in the past.</h2>
+      <p>Manual tracking, disconnected software, and blind spots in your daily workflow. Businesses lose margins to friction they can't even measure.</p>
+    </div>
+    <div class="problem-grid">
+      <article>
+        <span class="num">01</span>
+        <h3>Disconnected Systems</h3>
+        <p>Your hardware and software operate in silos, requiring manual data entry to bridge the gap.</p>
+      </article>
+      <article>
+        <span class="num">02</span>
+        <h3>Manual Bottlenecks</h3>
+        <p>Staff are stuck managing repetitive tasks, crowds, and queues instead of driving growth.</p>
+      </article>
+      <article>
+        <span class="num">03</span>
+        <h3>Blind Operations</h3>
+        <p>Owners lack real-time visibility into inventory, sales, and system uptime across locations.</p>
+      </article>
+      <article>
+        <span class="num">04</span>
+        <h3>Complex Reconciliation</h3>
+        <p>Tracking offline payments against digital orders makes daily accounting a nightmare.</p>
+      </article>
+      <article>
+        <span class="num">05</span>
+        <h3>Scalability Limits</h3>
+        <p>Growing the business currently means hiring more people, not scaling smarter systems.</p>
+      </article>
+      <article class="problem-cta">
+        <h3>And it's getting worse.</h3>
+        <p>Demand scales faster than human capacity. AuX is the way out.</p>
+        <a href="#solution" class="link-arrow">See the solution <svg class="ico-12"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark-section" id="solution">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">02 · The system</span>
+      <h2>One unified platform.<br/>Complete operational control.</h2>
+      <p>A tailored combination of full-stack software and smart integrations that turns manual chaos into a streamlined, self-service business.</p>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="ico"><svg><use href="#i-bolt"/></svg></div>
+        <h3>Self-Service Portals</h3>
+        <p>Let customers order and pay instantly without tying up your staff.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg><use href="#i-flow"/></svg></div>
+        <h3>Unified Dashboards</h3>
+        <p>Track sales, product delivery, and transactions from a single pane of glass.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg><use href="#i-qr"/></svg></div>
+        <h3>Frictionless Payments</h3>
+        <p>Integrated online gateways ensure funds settle directly with zero manual tracking.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg><use href="#i-cmd"/></svg></div>
+        <h3>Hardware Integration</h3>
+        <p>We connect physical operations and IoT frameworks directly to your digital workflow.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg><use href="#i-chart"/></svg></div>
+        <h3>Live Analytics</h3>
+        <p>Turn raw operational data into visual, real-time insights for better decision-making.</p>
+      </div>
+      <div class="feature">
+        <div class="ico"><svg><use href="#i-pin"/></svg></div>
+        <h3>Multi-Location Tracking</h3>
+        <p>Manage multiple branches or nodes from one centralized cloud console.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">03 · The flow</span>
+      <h2>Three steps to absolute efficiency.</h2>
+    </div>
+    <ol class="steps">
+      <li>
+        <span class="step-num">01</span>
+        <h3>Process Mapping</h3>
+        <div class="step-bar"></div>
+        <p>We analyze your current manual bottlenecks—be it payment collections, queues, or hardware operation.</p>
+      </li>
+      <li>
+        <span class="step-num">02</span>
+        <h3>Custom Architecture</h3>
+        <div class="step-bar"></div>
+        <p>We deploy secure customer-facing portals and high-performance staff dashboards tailored to your workflow.</p>
+      </li>
+      <li>
+        <span class="step-num">03</span>
+        <h3>Autonomous Execution</h3>
+        <div class="step-bar"></div>
+        <p>The system goes live, routing data, managing hardware limits, and processing transactions 24/7 without tension.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="dashboard">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">04 · Operator console</span>
+      <h2>Run your business from one screen.</h2>
+      <p>Real-time visibility across every system you deploy. No more guesswork.</p>
+    </div>
+    <div class="dash">
+      <aside class="dash-side">
+        <div class="dash-logo"><img src="logo.png" alt="" class="logo-img sm"/></div>
+        <span class="side-label">Workspace</span>
+        <nav>
+          <a class="active"><svg class="ico-14"><use href="#i-grid"/></svg> Overview</a>
+          <a><svg class="ico-14"><use href="#i-bolt"/></svg> Operations</a>
+          <a><svg class="ico-14"><use href="#i-coin"/></svg> Revenue</a>
+          <a><svg class="ico-14"><use href="#i-pin"/></svg> Locations</a>
+          <a><svg class="ico-14"><use href="#i-cmd"/></svg> Settings</a>
+        </nav>
+        <div class="side-foot">
+          <div class="usage">
+            <span>System Load</span>
+            <div class="bar"><i style="width:64%"></i></div>
+            <small>64% capacity utilized</small>
+          </div>
+        </div>
+      </aside>
+      <div class="dash-main">
+        <div class="dash-top">
+          <div>
+            <span class="kicker">DASHBOARD</span>
+            <h4>Good morning, Admin</h4>
+            <small>Showing data for the last 30 days</small>
+          </div>
+          <div class="dash-actions">
+            <span class="dash-pill"><span class="dot-g"></span> All systems normal</span>
+          </div>
+        </div>
+        <div class="kpi-grid">
+          <div class="kpi">
+            <span>Total Actions</span>
+            <h3 data-count="48230">0</h3>
+            <i class="up"><svg class="ico-10"><use href="#i-arrow"/></svg> 8.2% vs last month</i>
+          </div>
+          <div class="kpi">
+            <span>Revenue</span>
+            <h3>₹<em data-count="184500">0</em></h3>
+            <i class="up"><svg class="ico-10"><use href="#i-arrow"/></svg> 12.4% vs last month</i>
+          </div>
+          <div class="kpi">
+            <span>Active Nodes</span>
+            <h3 data-count="42">0</h3>
+            <i class="up"><svg class="ico-10"><use href="#i-arrow"/></svg> 3 added this week</i>
+          </div>
+          <div class="kpi">
+            <span>Avg Uptime</span>
+            <h3><em data-count="99">0</em>.6<span class="pct">%</span></h3>
+            <i class="up"><svg class="ico-10"><use href="#i-arrow"/></svg> 0.4% vs last month</i>
+          </div>
+        </div>
+        <div class="dash-row">
+          <div class="chart-card">
+            <div class="chart-head">
+              <div>
+                <h4>Transaction Volume</h4>
+                <small>Last 14 days · UTC+5:30</small>
+              </div>
+              <div class="chart-legend">
+                <span><i style="background:#fff"></i> Volume</span>
+                <span><i style="background:#525866"></i> Revenue</span>
+              </div>
+            </div>
+            <svg class="chart" viewBox="0 0 600 220" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="ga" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#fff" stop-opacity=".22"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g class="grid">
+                <line x1="0" x2="600" y1="40" y2="40"/>
+                <line x1="0" x2="600" y1="90" y2="90"/>
+                <line x1="0" x2="600" y1="140" y2="140"/>
+                <line x1="0" x2="600" y1="190" y2="190"/>
+              </g>
+              <path d="M0,160 L40,150 L80,130 L120,140 L160,100 L200,118 L240,80 L280,95 L320,65 L360,82 L400,50 L440,68 L480,38 L520,60 L560,28 L600,48 L600,220 L0,220 Z" fill="url(#ga)"/>
+              <path d="M0,160 L40,150 L80,130 L120,140 L160,100 L200,118 L240,80 L280,95 L320,65 L360,82 L400,50 L440,68 L480,38 L520,60 L560,28 L600,48"
+                    fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+              <path d="M0,180 L40,175 L80,170 L120,172 L160,160 L200,165 L240,150 L280,155 L320,140 L360,148 L400,128 L440,135 L480,118 L520,128 L560,108 L600,118"
+                    fill="none" stroke="#525866" stroke-width="1.4" stroke-dasharray="3 3" stroke-linejoin="round"/>
+              <g class="dots">
+                <circle cx="600" cy="48" r="4" fill="#fff"/>
+                <circle cx="600" cy="48" r="8" fill="#fff" opacity=".15"/>
+              </g>
+              <g class="axis">
+                <text x="0" y="212">Mon</text><text x="100" y="212">Wed</text>
+                <text x="200" y="212">Fri</text><text x="300" y="212">Sun</text>
+                <text x="400" y="212">Tue</text><text x="500" y="212">Thu</text>
+                <text x="588" y="212">Sat</text>
+              </g>
+            </svg>
+          </div>
+          <div class="status-card">
+            <div class="chart-head"><h4>System Status</h4><small>Live Nodes</small></div>
+            <ul class="status-list">
+              <li><span class="dot-g"></span><div><b>HQ · Main Portal</b><small>Node-01</small></div><span class="status-tag ok">Active</span></li>
+              <li><span class="dot-g"></span><div><b>Branch · Kiosk A</b><small>Node-02</small></div><span class="status-tag ok">Active</span></li>
+              <li><span class="dot-y"></span><div><b>Branch · Vending</b><small>Node-03</small></div><span class="status-tag warn">High Load</span></li>
+              <li><span class="dot-g"></span><div><b>Logistics API</b><small>Integration</small></div><span class="status-tag ok">Syncing</span></li>
+              <li><span class="dot-r"></span><div><b>Edge Device B</b><small>Hardware</small></div><span class="status-tag err">Offline</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark-section" id="benefits">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">05 · Why AuX</span>
+      <h2>Built for scale.<br/>Designed for ease.</h2>
+    </div>
+    <div class="benefits">
+      <div><div class="ico"><svg><use href="#i-clock"/></svg></div><h3>24/7 Operations</h3><p>Process requests and earn revenue automatically, even when you sleep.</p></div>
+      <div><div class="ico"><svg><use href="#i-coin"/></svg></div><h3>Reduced Overhead</h3><p>Handle massive crowds without increasing your headcount.</p></div>
+      <div><div class="ico"><svg><use href="#i-eye"/></svg></div><h3>Total Visibility</h3><p>Track every transaction, product, and delivery in real-time.</p></div>
+      <div><div class="ico"><svg><use href="#i-grid"/></svg></div><h3>Infinite Scaling</h3><p>Add new services, portals, or locations seamlessly to your console.</p></div>
+      <div><div class="ico"><svg><use href="#i-zap"/></svg></div><h3>Frictionless Experience</h3><p>Customers get what they want instantly, improving retention.</p></div>
+      <div><div class="ico"><svg><use href="#i-cmd"/></svg></div><h3>Central Control</h3><p>Update pricing, manage inventory, and handle permissions remotely.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about">
+    <span class="tag">06 · About</span>
+    <h2>We bridge the gap<br/>between physical and digital.</h2>
+    <p>AuX is a deep-tech automation partner. We leverage expertise in full-stack development, IoT, and embedded systems to build the invisible infrastructure behind everyday transactions. From smart print portals to complete operational dashboards, we remove friction wherever humans don't need to be.</p>
+    <div class="about-stats">
+      <div><h4>2024</h4><span>Founded</span></div>
+      <div><h4>100%</h4><span>Tailored</span></div>
+      <div><h4>24/7</h4><span>Autonomy</span></div>
+      <div><h4>99.6%</h4><span>System uptime</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner" id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="tag">Get started</span>
+      <h2>Stop managing chaos.<br/>Lets Automate.</h2>
+      <p>Talk to our team. We'll audit your workflow and build the digital infrastructure your business needs to scale effortlessly.</p>
+      <div class="hero-actions">
+        <a href="https://forms.gle/W8guEtgyeV2wfzW18" target="_blank" class="btn btn-primary btn-lg">Request a Consultation <svg class="ico-14"><use href="#i-arrow"/></svg></a>
+        <a href="mailto:hello@aux.io" class="btn btn-outline btn-lg">Contact sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#" class="logo"><img src="logo.png" alt="AuX" class="logo-img"/></a>
+      <p class="muted">Intelligent business automation. Built for the modern enterprise.</p>
+      <div class="socials">
+        <a aria-label="X" href="#"><svg><use href="#i-x-social"/></svg></a>
+        <a aria-label="LinkedIn" href="#"><svg><use href="#i-in"/></svg></a>
+        <a aria-label="GitHub" href="#"><svg><use href="#i-gh"/></svg></a>
+        <a aria-label="Instagram" href="#"><svg><use href="#i-ig"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h5>Solutions</h5>
+      <a href="#solution">Dashboards</a>
+      <a href="#solution">Smart Portals</a>
+      <a href="#solution">Hardware Integration</a>
+      <a href="#cta">Consulting</a>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <a href="#about">About Us</a>
+      <a href="#how">Approach</a>
+      <a href="#cta">Contact</a>
+      <a href="#">Careers</a>
+    </div>
+    <div>
+      <h5>Resources</h5>
+      <a href="#">Case Studies</a>
+      <a href="#">Documentation</a>
+      <a href="#">System Status</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© <span id="year"></span> AuX Startup. All rights reserved.</small>
+    <small class="mono">v3.0.0 · all systems operational</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

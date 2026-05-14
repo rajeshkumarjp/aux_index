@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a0a0b" />
+<meta name="description" content="AuX enquiry form. Tell us about your business and automation goals." />
+<title>AuX | Enquiry</title>
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+	<defs>
+		<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+		<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+		<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+		<symbol id="i-cmd" viewBox="0 0 24 24"><path d="M9 9V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+		<symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14 9.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-2.5 1-2.5 2s1 1.7 2.5 2 2.5 1 2.5 2-1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6v2M12 16v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+	</defs>
+</svg>
+
+<canvas id="bg-particles" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+	<div class="container nav-inner">
+		<a href="index.html" class="logo" aria-label="AuX home">
+			<img src="logo.png" alt="AuX" class="logo-img" />
+		</a>
+		<nav class="nav-links" aria-label="Primary">
+			<a href="index.html#solution">Solutions</a>
+			<a href="index.html#how">Approach</a>
+			<a href="index.html#about">Company</a>
+		</nav>
+		<div class="nav-cta">
+			<a href="index.html" class="btn btn-ghost">Back to Home</a>
+			<a href="#enquiry-form" class="btn btn-primary">Fill Form <svg class="ico-12"><use href="#i-arrow"/></svg></a>
+		</div>
+		<button class="nav-burger" id="burger" aria-label="Open menu">
+			<span></span><span></span>
+		</button>
+	</div>
+</header>
+
+<main>
+	<section class="section enquiry-hero">
+		<div class="container enquiry-grid">
+			<div class="enquiry-copy reveal">
+				<span class="tag">Consultation request</span>
+				<h1>Tell us your workflow.<br/><span class="grad">We will design the automation.</span></h1>
+				<p>Share your business context, current bottlenecks, and operating goals. Our team will review your enquiry and reach out with a tailored automation roadmap.</p>
+
+				<div class="enquiry-points">
+					<div><svg><use href="#i-check"/></svg> Personalized architecture for your business</div>
+					<div><svg><use href="#i-check"/></svg> Dashboard, portal, and hardware planning</div>
+					<div><svg><use href="#i-check"/></svg> Clear rollout timeline and implementation scope</div>
+				</div>
+
+				<div class="enquiry-float one">
+					<p class="kicker">Response Window</p>
+					<h4><svg><use href="#i-clock"/></svg> Within 24 hours</h4>
+				</div>
+				<div class="enquiry-float two">
+					<p class="kicker">Typical outcome</p>
+					<h4><svg><use href="#i-cmd"/></svg> Automation blueprint</h4>
+				</div>
+			</div>
+
+			<div class="enquiry-card reveal" id="enquiry-form">
+				<div class="enquiry-head">
+					<h2>Business Enquiry Form</h2>
+					<small class="mono">All fields marked * are required</small>
+				</div>
+
+				<form class="enquiry-form" action="#" method="post">
+					<div class="form-grid two">
+						<label>
+							Contact Person *
+							<input type="text" name="contactName" placeholder="Your full name" required />
+						</label>
+						<label>
+							Contact Number *
+							<input type="tel" name="contactPhone" placeholder="+91 98765 43210" required />
+						</label>
+					</div>
+
+					<div class="form-grid two">
+						<label>
+							Business Email *
+							<input type="email" name="email" placeholder="name@business.com" required />
+						</label>
+						<label>
+							Business Name *
+							<input type="text" name="businessName" placeholder="Your company name" required />
+						</label>
+					</div>
+
+					<div class="form-grid two">
+						<label>
+							Industry *
+							<select name="industry" required>
+								<option value="" selected disabled>Select industry</option>
+								<option>Retail</option>
+								<option>Food and Beverage</option>
+								<option>Printing Services</option>
+								<option>Logistics</option>
+								<option>Healthcare</option>
+								<option>Education</option>
+								<option>Other</option>
+							</select>
+						</label>
+						<label>
+							Company Website
+							<input type="url" name="website" placeholder="https://yourbusiness.com" />
+						</label>
+					</div>
+
+					<label>
+						What does your business do? *
+						<textarea name="businessDetails" rows="4" placeholder="Briefly describe your business model, operations, and customers" required></textarea>
+					</label>
+
+					<label>
+						Current operational challenges *
+						<textarea name="painPoints" rows="4" placeholder="Share key pain points such as queues, manual tracking, reconciliation, downtime, etc." required></textarea>
+					</label>
+
+					<fieldset>
+						<legend>What would you like to automate? *</legend>
+						<div class="chip-grid">
+							<label><input type="checkbox" name="goals" value="self-service" /> Self-service portal</label>
+							<label><input type="checkbox" name="goals" value="payments" /> Payments and reconciliation</label>
+							<label><input type="checkbox" name="goals" value="dashboard" /> Real-time dashboard</label>
+							<label><input type="checkbox" name="goals" value="iot" /> Hardware or IoT integration</label>
+							<label><input type="checkbox" name="goals" value="inventory" /> Inventory visibility</label>
+							<label><input type="checkbox" name="goals" value="multi-location" /> Multi-location operations</label>
+						</div>
+					</fieldset>
+
+					<div class="form-grid three">
+						<label>
+							Monthly transaction volume
+							<select name="volume">
+								<option value="" selected disabled>Select range</option>
+								<option>0-1,000</option>
+								<option>1,000-10,000</option>
+								<option>10,000-50,000</option>
+								<option>50,000+</option>
+							</select>
+						</label>
+						<label>
+							Expected timeline
+							<select name="timeline">
+								<option value="" selected disabled>Select timeline</option>
+								<option>Immediately</option>
+								<option>1-2 months</option>
+								<option>3-6 months</option>
+								<option>Exploring options</option>
+							</select>
+						</label>
+						<!-- <label>
+							Estimated budget
+							<select name="budget">
+								<option value="" selected disabled>Select budget</option>
+								<option>Under ₹1L</option>
+								<option>₹1L - ₹5L</option>
+								<option>₹5L - ₹20L</option>
+								<option>₹20L+</option>
+							</select>
+						</label> -->
+					</div>
+
+					<fieldset>
+						<legend>Preferred contact method *</legend>
+						<div class="radio-row">
+							<label><input type="radio" name="contactMethod" value="email" required /> Email</label>
+							<label><input type="radio" name="contactMethod" value="phone" required /> Phone</label>
+							<label><input type="radio" name="contactMethod" value="whatsapp" required /> WhatsApp</label>
+						</div>
+					</fieldset>
+
+					<label class="consent">
+						<input type="checkbox" name="consent" required />
+						<span>I agree to be contacted by AuX regarding this enquiry.</span>
+					</label>
+
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary btn-lg">Submit Enquiry <svg class="ico-14"><use href="#i-arrow"/></svg></button>
+						<a href="in dex.html" class="btn btn-outline btn-lg">Back to Home</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="footer">
+	<div class="container footer-bottom">
+		<small>© <span id="year"></span> AuX Startup. All rights reserved.</small>
+		<small class="mono">enquiry portal · secure mode</small>
+	</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
